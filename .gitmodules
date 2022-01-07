@@ -1,0 +1,3 @@
+[submodule "gvp"]
+	path = gvp
+	url = git@github.com:COMP6248-Reproducability-Challenge/Geometric-Vector-Perceptron.git
