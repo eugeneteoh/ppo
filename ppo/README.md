@@ -7,6 +7,6 @@ Implementation of [Proximal Policy Optimization](https://arxiv.org/pdf/1707.0634
 To install package and run PPO:
 
 ```bash
-pip install .
-run_ppo
+pip install .   # Installs package
+run_ppo         # Run PPO
 ```
