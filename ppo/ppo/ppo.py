@@ -30,6 +30,8 @@ class PPO:
         env_id: str,
         num_workers: int,
         ep_len: int,
+        rollout_iterations: int,
+        epochs: int,
         minibatch_size: int,
         gamma: int,
         lr: int,
@@ -42,6 +44,8 @@ class PPO:
         self.env_id = env_id
         self.num_workers = num_workers
         self.ep_len = ep_len
+        self.rollout_iterations = rollout_iterations
+        self.epochs = epochs
         self.minibatch_size = minibatch_size
         self.gamma = gamma
         self.lr = lr
