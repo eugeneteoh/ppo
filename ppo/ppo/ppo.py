@@ -6,7 +6,7 @@ from torch import nn, optim
 from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm
 
-from ppo.model import ActorCritic
+from ppo import ActorCritic
 
 
 def make_env(env_id, rank, seed=0):

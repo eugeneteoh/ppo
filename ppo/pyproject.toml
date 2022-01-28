@@ -13,8 +13,8 @@ box2d-py = "^2.3.8"
 tqdm = "^4.62.3"
 tensorboard = "^2.8.0"
 
-[tool.poetry.dev-dependencies]
-pytest = "^6.2.5"
+[tool.poetry.scripts]
+run_ppo = "ppo.cli:main"
 
 [build-system]
 requires = ["poetry-core @ git+https://github.com/python-poetry/poetry-core.git@master"]

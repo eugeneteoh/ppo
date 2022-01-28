@@ -4,7 +4,7 @@ import torch
 
 from ppo import PPO
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description="Train PPO")
     parser.add_argument(
         "--env_id", type=str, default="LunarLanderContinuous-v2", help="Gym env id"
@@ -46,3 +46,6 @@ if __name__ == "__main__":
         device=device,
     )
     ppo.train()
+
+if __name__ == "__main__":
+    main()
