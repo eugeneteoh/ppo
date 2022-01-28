@@ -5,10 +5,12 @@ description = ""
 authors = ["Eugene Teoh <eugenetwc1@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = ">=3.9"
-torch = {version = "^1.10.1"}
-gym = {version = "^0.21.0", extras = ["atari", "accept-rom-license"]}
-pytorch-lightning = "^1.5.8"
+python = ">=3.7, <=3.9.*"
+torch = "^1.10.2"
+gym = "<=0.20"
+stable-baselines3 = "^1.4.0"
+box2d-py = "^2.3.8"
+tqdm = "^4.62.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
