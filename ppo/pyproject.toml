@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ppo"
+version = "0.1.0"
+description = ""
+authors = ["Eugene Teoh <eugenetwc1@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.7, <3.10"
+torch = "^1.10.2"
+gym = "<=0.20"
+stable-baselines3 = "^1.4.0"
+box2d-py = "^2.3.8"
+tqdm = "^4.62.3"
+tensorboard = "^2.8.0"
+
+[tool.poetry.scripts]
+run_ppo = "ppo.cli:main"
+
+[build-system]
+requires = ["poetry-core @ git+https://github.com/python-poetry/poetry-core.git@master"]
+build-backend = "poetry.core.masonry.api"
